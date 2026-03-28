@@ -1,0 +1,15 @@
+{
+  "dataset_id": "team_alpha",
+  "pr_cycle_hours_avg": 31.5,
+  "ci_duration_min_avg": 48.0,
+  "flaky_test_count": 6,
+  "doc_coverage_pct": 72.0,
+  "ownership_gap_count": 2,
+  "review_latency_hours_avg": 22.0,
+  "rollback_count_30d": 1,
+  "churn_hotspots": [
+    {"path": "services/payments", "churn": 5.8, "owner_known": true},
+    {"path": "services/auth", "churn": 7.2, "owner_known": false},
+    {"path": "infra/pipelines", "churn": 6.4, "owner_known": true}
+  ]
+}

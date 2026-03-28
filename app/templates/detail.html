@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card">
+  <h2>Report for {{ item.dataset.dataset_id }}</h2>
+  <p>Overall friction score: <strong>{{ item.report.overall_friction_score }}</strong></p>
+  <h3>Ranked categories</h3>
+  <p>{{ item.report.ranked_categories }}</p>
+  <h3>Prioritized recommendations</h3>
+  <p>{{ item.report.prioritized_recommendations }}</p>
+  <h3>Quick wins</h3>
+  <p>{{ item.report.quick_wins }}</p>
+  <h3>Longer fixes</h3>
+  <p>{{ item.report.longer_fixes }}</p>
+  <h3>Ownership gaps</h3>
+  <p>{{ item.report.ownership_gaps }}</p>
+  <p>{{ item.report.summary_memo }}</p>
+</section>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card">
+  <h2>Datasets</h2>
+  <table>
+    <thead><tr><th>Dataset</th><th>Overall Score</th></tr></thead>
+    <tbody>
+    {% for row in rows %}
+      <tr>
+        <td><a href="/report/{{ row.dataset_id }}">{{ row.dataset_id }}</a></td>
+        <td>{{ row.report.overall_friction_score if row.report else "Not analyzed" }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endblock %}
