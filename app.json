@@ -1,0 +1,15 @@
+{
+  "name": "developer-friction-analyzer",
+  "description": "Tool for deterministic developer-friction scoring over synthetic workflow and repo-health data.",
+  "repository": "https://github.com/marbatis/developer-friction-analyzer",
+  "keywords": ["python","demo","heroku"],
+  "env": {
+    "PYTHONUNBUFFERED": {"description": "Disable Python output buffering", "value": "1"}
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
